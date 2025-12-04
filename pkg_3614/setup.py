@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = '3614_ws'
+package_name = 'pkg_3614'
 
 setup(
     name=package_name,
@@ -24,6 +24,9 @@ setup(
     },
     entry_points={
         'console_scripts': [
+	        'one=pkg_3614.test1:main',
+            'two=pkg_3614.test2:main',
+            'final=pkg_3614.test_final:main',
         ],
     },
 )
